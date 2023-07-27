@@ -1,0 +1,302 @@
+
+/* === container css === */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+
+
+
+/* === Font End === */
+
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    top: 0;
+    background: rgb(201, 224, 255);
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+#navbarNav ul.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+ul.dropdown-menu.show {
+    padding: 0;
+    box-shadow: 0 0 3px 0 #0000007d;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+} 
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.navbar-light .navbar-brand {
+    max-width: 350px;
+    min-width: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+#banner {
+    background-image: url(../img/windmill.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    padding: 200px 0;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* === Icon === */
+
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.icons a {
+    background-color: #54c8fe;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.icons a:hover {
+    background-color: #324bef;
+}
+
+
+/* === detail_section === */
+
+
+h2 {
+    color: #5e5eff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#detail_section {
+    margin: 50px 0;
+}
+
+p {
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+
+/* === main_blog === */
+
+#main_blog {
+    margin: 50px 0;
+}
+
+#main_blog figure {
+    text-align: center;
+}
+
+#main_blog img {
+    width: 80%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+/* === footer === */
+
+footer {
+    background: #0a013d;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+footer .copy-right {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+@media (max-width: 786px) {
+
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link{
+        font-size: 1rem;
+    }
+
+    .collapse:not(.show) {
+        display: flex !important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .show>.nav-link {
+        padding: 10px 10px;
+    }
+
+    .navbar-light .navbar-brand {
+        width: 200px;
+        height: auto;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .collapse:not(.show) {
+        display: none !important;
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: flex;
+    }
+
+    .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .show>.nav-link{
+        font-size: 0.75rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+    }
+
+    header .header {
+        flex-wrap: wrap;
+    }
+
+    #navbarNav ul.navbar-nav {
+        width: fit-content;
+        text-align: left;
+        justify-content: start;
+        padding: 0;
+    }
+
+    #navbarNav ul.navbar-nav li {
+        margin-bottom: 10px;
+    }
+
+    #main_blog img {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+
+    footer .copy-right {
+        font-size: 16px;
+    }
+}
